@@ -1,0 +1,353 @@
+:root {
+    --lightyellow: rgb(239, 230, 194);
+    --darkgreen: rgb(60, 64, 41);
+}
+
+/* General landing page styling */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--lightyellow);
+}
+
+/* Styling for top navigation bar */
+.top-navigation {
+    text-align: center;
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    position: fixed;
+    background-color: var(--lightyellow);
+    z-index: 9;
+}
+
+
+ul, ol {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    box-sizing: border-box;
+    height:fit-content;
+}
+
+li {
+    width: 100%;
+    height:fit-content;
+    font-size: 20px;
+    /* padding: 5px 5px; */
+    display: inline-block;
+    justify-content: space-between;
+    box-sizing: border-box;  
+}
+
+a {
+    text-decoration: none;
+    color: var(--darkgreen);
+    padding: 10px 20px;
+    font-family: 'Turret Road', cursive;
+    font-size: 18px;
+    display: block;
+}
+
+/* This is the styling for MOONR8KER and other larger headings */
+h1 {
+    display: inline;
+    font-size: 22px;
+    color: var(--darkgreen);
+    text-align: center;
+    font-family:'Notable', sans-serif;
+}
+
+.lo  {
+    font-family: 'Turret Road';
+}
+
+.mapped {
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: center;
+    display:flex;
+}
+
+.planning {
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-self: center;
+    display:flex;
+}
+
+.col {
+    padding: 0px;
+    display: block;
+}
+
+/* Styling for left side of hero */
+.left-hero-shell-image {
+    display: block;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+}
+
+/* Styling for right side of hero */
+#right-side-info {
+    display: inline-block;
+    margin-top: 100px;
+    text-align: left;
+    padding: 0 0 0 150px;
+}
+
+.hero-moon-image {
+    display: inline-block;
+    object-fit: cover;
+    height: auto;
+    width: 200px;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+p {
+    font-family: 'MuseoModerno', cursive;
+    display: inline-block;
+    margin-bottom: 5%;
+    font-size: 11px;
+    padding: 5px;
+    align-content: center;
+}
+
+.start {
+    border-radius: 50%;
+    border: none;
+    background-color:var(--darkgreen);
+    height: 140px;
+    width: 140px;
+    top: 575px;
+    left: 675px;
+}
+
+#start-btn {
+    font-size: 20px;
+    font-family: 'notable';
+}
+
+#test {
+    color: var(--lightyellow);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    background-color: var(--darkgreen);
+  }
+
+.item {
+    height: 100vh;
+}
+
+.item1 {
+    width: 100%;
+    background-color: var(--lightyellow);
+}
+
+.item2 {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--lightyellow);
+}
+
+.item3 {
+    width: auto;
+    grid-column-start: 4;
+    grid-column-end: 8;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+
+.circle-shell-ufo-image {
+    object-fit: contain;
+    width: auto;
+    height: 75vh;  
+    position:absolute;
+    margin-left: 110px;
+    margin-top: 12vh;
+}
+
+#go-btn {
+    font-family: 'Turret Road', cursive;
+    background-color: var(--lightyellow);
+    color: var(--darkgreen);
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.5rem;
+}
+
+#content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#h2-planning {
+    text-decoration: none;
+    color: var(--darkgreen);
+    font-family: 'Turret Road', cursive;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+    padding: 0px 0px;
+    color: var(--lightyellow);
+}
+
+#beginning-text-h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0px 0px;
+    color: var(--lightyellow);
+    font-size: 24px;
+}
+
+#lets-plan {
+    text-align: center;
+    margin: 0;
+    padding: 0px 0px;
+    color: var(--lightyellow);
+    font-size: 23px;
+}
+
+#moon-icons {
+    display: flex;
+    object-fit: contain;
+    margin: 40px 40px 20px 30px;
+    width: 48px;
+    justify-self: center;  
+}
+
+.para-wrapper {
+    width: 620px;
+    padding: 50px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+#p-planning {
+    font-family: 'MuseoModerno', cursive;
+    /* display: inline-block; */
+    margin: 0px 95px;
+    font-size: 11px;
+    text-align: left;
+    padding: 40px;
+    color: var(--lightyellow);
+}
+
+.mapped-container {
+    display: flex;
+    height: 100vh;
+}
+
+.mapped-left {
+    background-color: var(--lightyellow);
+    flex-flow: column;
+    justify-content: center;
+    display: flex;
+    margin-bottom: inherit;
+}
+
+.crescent-img {
+    flex: 1 0 60%;
+    display: block;
+    align-content: center;
+    width: 550px;
+    justify-self: center;
+    overflow: hidden;
+    object-fit: cover;    
+}
+
+.mapped-right {
+    flex: 1 0 40%;
+    background-color:var(--lightyellow);
+    margin-bottom: inherit;
+    width: 600px;
+}
+
+.container-datepicker {
+    padding: 20px 0;
+} 
+
+.button-color {
+    background-color:var(--darkgreen);
+}
+
+.card-background {
+    background-color: rgba(60, 64, 41, 0.3);
+}
+
+#mapped {
+    background-color: var(--lightyellow);
+}
+
+button {
+    font-family: 'Turret Road', cursive;
+}
+
+.delete-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 156.275px;
+    border-radius: 6px;
+}
+
+.card-new {
+    display: block;
+    height: 155px;
+}
+
+.card-ul {
+    list-style: none;
+    text-align: center;
+}
+
+.card-li {
+  font-size: 12px;
+  font-family: 'Turret Road', cursive;
+color:var(--darkgreen);
+
+}
+
+.map-phase {
+    text-align: center;
+    justify-self: center;
+    display: block;
+    margin-bottom: none;
+    font-family: 'Notable', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    color:var(--darkgreen);
+
+}
+
+.map-activity {
+    text-align: center;
+    justify-self: center;
+    display: block;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 18px;
+    line-height: 19px;
+    padding: 0px 3px 0px 3px;
+    color:var(--darkgreen);
+}
+
+  /* } */
